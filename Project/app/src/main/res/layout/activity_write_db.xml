@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ReadDBActivity">
+
+<!--    DB입력 페이지-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="방문 맛집"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DCFAF5"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <!--        식당 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="식당명"
+            android:inputType="textPersonName" />
+
+        <!--        식당 구분 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editText_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ex) 한식, 중식"
+            android:inputType="textPersonName" />
+
+        <!--        주소 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editText_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ex) 서울시 서대문구 홍은동"
+            android:inputType="textPersonName" />
+
+        <!--        별점 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editText_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="별점수(ex : 4)"
+            android:inputType="textPersonName" />
+
+        <!--        방문일 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editText_visited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="방문날짜(yyyy-mm-dd)"
+            android:inputType="date" />
+
+        <!--        리뷰 입력 에디트텍스트-->
+        <EditText
+            android:id="@+id/editText_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="한줄 리뷰 : "
+            android:inputType="textPersonName" />
+
+        <!--        DB저장 버튼-->
+        <Button
+            android:id="@+id/button_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입력"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
